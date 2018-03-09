@@ -1,4 +1,7 @@
 <?php
+define('__ROOT__', dirname(dirname(__FILE__)));
+require_once(__ROOT__.'/generadorCNOrig/vendor/voku/anti-xss/src/voku/helper/AntiXSS.php');
+require_once(__ROOT__.'/generadorCNOrig/vendor/voku/portable-utf8/src/voku/helper/UTF8.php');
 use voku\helper\AntiXSS;
 $antiXss = new AntiXSS();
 
@@ -147,4 +150,3 @@ function xss($string){
     return $data;
 }
 */
-?>
